@@ -9,6 +9,8 @@ import {
 
 import { Badge } from "@/components/ui/badge"
 
+import PokemonDetailLoading from "./loading"
+
 const PokemonDetail = () => {
   return (
     <Card className={cn("w-[380px]")}>
