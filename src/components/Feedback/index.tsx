@@ -20,14 +20,14 @@ const Icon = ({ name }: IconProps) => {
 
 interface FeedbackProps {
   text: string,
-  icon: IconProps["name"],
+  icon: string,
 }
 
 const Feedback = ({ text, icon }: FeedbackProps) => {
 
   return (
     <div className="w-full max-w-sm flex flex-col items-center justify-center h-auto space-x-2 mt-4">
-      <Icon name={icon} />
+      <Icon name={icon as IconProps["name"]} />
       <p className="text-center">{text}</p>
     </div>
   )
