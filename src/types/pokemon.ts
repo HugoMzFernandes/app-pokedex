@@ -1,7 +1,9 @@
 export interface Pokemon {
   name: string;
   id: number;
-  type: string;
+  type: {
+    typeName: string,
+  }[];
   stats: {
     baseStat: number,
     name: string,
