@@ -23,7 +23,7 @@ const PokemonDetail = () => {
           <CardTitle className="h-10 flex items-center justify-center text-xl font-bold tracking-tight lg:text-2xl">
             #93 Haunter
           </CardTitle>
-          <CardDescription className="h-10 flex items-center justify-center">
+          <CardDescription className="h-10 flex items-center justify-center gap-4">
             <Badge className="w-1/2 inline-flex items-center justify-center" variant="secondary">Ghost</Badge>
             <Badge className="w-1/2 inline-flex items-center justify-center" variant="secondary">Poison</Badge>
           </CardDescription>
