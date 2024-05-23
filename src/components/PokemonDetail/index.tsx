@@ -12,7 +12,7 @@ import { Pokemon } from "@/types/pokemon"
 
 const PokemonDetail = ({name, id, type, stats, imageUrl}: Pokemon) => {
   return (  
-    <Card className={cn("w-[380px]")}>
+    <Card className={cn("w-[380px] pokemon-detail")}>
       <CardHeader className="grid grid-cols-1 gap-4 px-4 py-4">
         <div className="w-[346px] h-[123px] flex items-center justify-center m bg-gray-200 rounded-xl overflow-hidden shadow-lg">
           <img
@@ -22,16 +22,16 @@ const PokemonDetail = ({name, id, type, stats, imageUrl}: Pokemon) => {
         </div>
         <div className="w-full grid-rows-2">
           <CardTitle className="h-10 flex items-center justify-center text-xl font-bold tracking-tight lg:text-2xl">
-            #{id} - <span className="capitalize">&nbsp;{name}</span>
+            #{id} - <span className="name capitalize">&nbsp;{name}</span>
           </CardTitle>
-          <CardDescription className="h-10 flex items-center justify-center gap-4">
+          <CardDescription className="types h-10 flex items-center justify-center gap-4">
             { type.map((type) => (
               <Badge key={type.typeName} className="w-1/2 inline-flex items-center justify-center" variant="secondary">{type.typeName}</Badge>
             ))}
           </CardDescription>
         </div>
       </CardHeader>
-      <CardContent className="w-full sm:grid-cols-4 grid grid-cols-2 gap-4 py-2">
+      <CardContent className="stats w-full sm:grid-cols-4 grid grid-cols-2 gap-4 py-2">
         { stats.map((stat) => (
           <Card key={stat.name} className="w-full rounded-md col-span-2">
             <CardHeader className="p-2">

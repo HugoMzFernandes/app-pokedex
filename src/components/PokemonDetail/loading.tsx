@@ -3,7 +3,7 @@ import { Skeleton } from "@/components/ui/skeleton"
 
 const PokemonDetailLoading = () => {
   return (
-    <div className={cn("w-[380px]")}>
+    <div className={cn("w-[380px]", "loading" )}>
       <div className="px-4 py-4">
         <Skeleton className="w-[346px] h-[123px] rounded-xl" />
         <div className="w-full grid-rows-2 mt-4">
