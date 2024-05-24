@@ -41,7 +41,7 @@ npm install
 4. Rode o servidor local de desenvolvimento:
 
 ```
-npm start
+npm run dev
 ```
 
 > [!IMPORTANT]
@@ -49,19 +49,19 @@ npm start
 
 ## Testes
 
-A cobertura de testes automatizados vem na forma de testes e2e e visuais.
+A cobertura de testes automatizados vem na forma de testes e2e.
 
-### e2e e visual
-Os testes e2e e visuais foram escritos em [Cypress](https://www.cypress.io/)
+### e2e
+Os testes e2e foram escritos em [Cypress](https://www.cypress.io/)
 
 > [!NOTA]
-> Para executar os testes e2e e visuais é necessário que o [BFF Pokedex](https://github.com/HugoMzFernandes/api-pokedex-bff) esteja sendo executado.
+> Para executar os testes e2e é necessário que o [BFF Pokedex](https://github.com/HugoMzFernandes/api-pokedex-bff) esteja sendo executado.
 
 Para executar a suite de testes e2e:
 
 `npm run e2e:chrome`
 
-Para executar a suite de testes visuais
+ou
 
 `npx cypress open`
 
