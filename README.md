@@ -41,7 +41,7 @@ npm install
 4. Rode o servidor local de desenvolvimento:
 
 ```
-npm start
+npm run dev
 ```
 
 > [!IMPORTANT]
